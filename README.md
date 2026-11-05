@@ -2,6 +2,8 @@
 
 业务总览 · 客户展示 Dashboard Demo v0.1.1
 
+**客户在线演示：[打开 Nexora Business OS](https://gogomyproject-dev.github.io/Nexora-Business-OS/)**
+
 本轮仅完成客户展示 Dashboard Demo，未完成 proposal 建议的业务流程 PoC。所有数据为虚构数据，不用于正式账目、审批或支付。
 
 ## 本地使用
@@ -77,12 +79,17 @@ React 19、TypeScript、Vite、Tailwind CSS 4、Lucide、Recharts、date-fns、V
 
 保留 Repository 接口，后端按已确认的口径返回只读汇总/明细。正式权限、审核、去重、金额校验和审计必须在后端落实。正式利润须来自会计账目；真实 AI 和流程 PoC 另行实施。客户对 Demo 的反馈仅用于确认排版、指标呈现及交互，不构成整体系统验收。
 
-## GitHub
+## GitHub 与客户演示
 
-项目仓库：https://github.com/gogomyproject-dev/Nexora-Business-OS
+- 在线演示：https://gogomyproject-dev.github.io/Nexora-Business-OS/
+- 公开源码：https://github.com/gogomyproject-dev/Nexora-Business-OS
 
-`main` 推送后自动执行 lint、typecheck、test、build，并上传构建产物 `nexora-business-os-demo`。仓库保持原有可见性；私有仓库链接仅对已获授权的人开放。
+仓库已根据用户明确授权设为公开，GitHub Pages 使用 GitHub Actions 发布。推送至 `main` 后自动检查和发布，也可手动运行 “Deploy Nexora Business OS to GitHub Pages”。客户可以直接打开在线演示，无需安装 Node.js 或登录 GitHub。
 
-项目使用相对资源路径，可部署在 GitHub Pages 子路径。管理员启用 Pages（Source: GitHub Actions）后，可手动运行 “Deploy Nexora Business OS to GitHub Pages”。是否可在私有仓库启用 Pages 取决于 GitHub 账户功能；此工作流不会改变仓库可见性。未启用时可继续本地运行。
+验证工作流执行 lint、typecheck、test、build，并上传构建产物 `nexora-business-os-demo`。项目使用相对资源路径，支持 GitHub Pages 子路径。
 
-`MD file/` 下的独立完整系统任务书不属于 Dashboard Demo，未纳入本仓库。
+所有数据均为固定模拟数据，不包含真实业务数据。`MD file/` 下的独立完整系统任务书不属于 Dashboard Demo，未纳入本仓库。
+
+![Nexora Business OS 桌面预览](docs/screenshots/desktop.png)
+
+[查看手机预览](docs/screenshots/mobile.png)

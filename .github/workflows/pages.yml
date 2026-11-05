@@ -1,7 +1,9 @@
 name: Deploy Nexora Business OS to GitHub Pages
 
-# Run manually after GitHub Pages is enabled for this repository.
+# GitHub Pages is enabled; publish updates from main automatically.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

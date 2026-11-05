@@ -53,7 +53,7 @@ AI 待审核数量问题只读取独立流程汇总，相对 proposal 的正式 
 - 审批和 Claim 展示当前状态，不复原历史时点状态。自定义日期超出覆盖不补造数据，变化率显示不可比较。
 - loading 和错误重试路径已实现；未人为破坏 Repository 来执行错误界面的浏览器故障注入测试。
 - 页面为 React/Vite 前端，抽屉采用 shadcn 风格的本地 Radix primitive；未生成整套 shadcn 组件。Recharts 2 与 ESLint 9 依赖有 registry 的旧版本提示，本轮固定兼容版本；正式系统升级依赖需重新验证。
-- 当前为本地客户演示，尚未发布在线网址。
+- 已根据用户授权公开仓库并配置 GitHub Pages，客户演示地址：https://gogomyproject-dev.github.io/Nexora-Business-OS/ 。所有数据仍为模拟数据。
 
 ## 下一轮建议与 API 接入
 
